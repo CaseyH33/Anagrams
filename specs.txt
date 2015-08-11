@@ -47,3 +47,9 @@ Anagrams with BDD:
     Behavior: Will return all anagrams, including partial matches.
     Input: "Cat" | "Tact", "enact", "bread", "act"
     Output: "Tact", "enact", "act"
+
+9. anagram_true_MultipleSameLetters
+
+    Behavior: Will return all anagrams, including partial matches, even with multiples of one letter in the keyword.
+    Input: "Tact" | "enact", "intact", "bread", "protract", "cat"
+    Output: "intact", "protract"
