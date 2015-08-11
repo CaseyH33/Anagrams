@@ -6,6 +6,8 @@
             if($input_word == $input_wordsToCheck)
             {
                 return $input_wordsToCheck;
+            } else {
+                return "No matches found.";
             }
         }
     }
