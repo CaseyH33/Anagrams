@@ -116,5 +116,19 @@
             $this->assertEquals("Tact enact act", $result);
         }
 
+        function test_anagram_true_duplicateLetters()
+        {
+            //Arrange
+            $test_anagram = new AnagramGenerator;
+            $input_word = "tact";
+            $input_wordsToCheck = "act cat bread bard intact interact protract bob";
+
+            //Act
+            $result = $test_anagram->anagramCheck($input_word, $input_wordsToCheck);
+
+            //Assert
+            $this->assertEquals("intact interact protract", $result);
+        }
+
     }
 ?>
