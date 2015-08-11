@@ -6,7 +6,7 @@
 
 ## Description
 
-This application provides a form for two user inputs: a keyword and a list of words separated by a space.  It then searches the list of words for anagrams of the keyword and returns those on a separate results page.
+This application provides a form for two user inputs: a keyword and a list of words separated by a space.  It then searches the list of words for anagrams of the keyword and returns those on a separate results page.  It will also return partial matches (e.g. "intact" will be an anagram of keyword: "cat"), but not return words that don't contain all the letters of the keyword (e.g. "cat" will not be a match for keyword: "intact").
 
 ## Setup
 
