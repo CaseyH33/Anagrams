@@ -101,5 +101,19 @@
             //Assert
             $this->assertEquals("CAT tAc", $result);
         }
+
+        function test_anagram_true_partial()
+        {
+            //Arrange
+            $test_anagram = new AnagramGenerator;
+            $input_word = "Cat";
+            $input_wordsToCheck = "Tact enact bread act";
+
+            //Act
+            $result = $test_anagram->anagramCheck($input_word, $input_wordsToCheck);
+
+            //Assert
+            $this->assertEquals("Tact enact act", $result);
+        }
     }
 ?>
