@@ -71,7 +71,21 @@
             $result = $test_anagram->anagramCheck($input_word, $input_wordsToCheck);
 
             //Assert
-            $this->assertEquals("beard", $result);        
+            $this->assertEquals("beard", $result);
+        }
+
+        function test_anagram_true_multipleResults()
+        {
+            //Arrange
+            $test_anagram = new AnagramGenerator;
+            $input_word = "act";
+            $input_wordsToCheck = "cat beard tac";
+
+            //Act
+            $result = $test_anagram->anagramCheck($input_word, $input_wordsToCheck);
+
+            //Assert
+            $this->assertEquals("cat tac", $result);
         }
     }
 ?>
