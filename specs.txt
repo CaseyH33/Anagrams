@@ -1,0 +1,9 @@
+Anagrams with BDD:
+
+1. Prints a user inputed word
+2. Converts string of user inputed words into an array
+3. Each word in the array is broken into an array of letters
+4. Each letter array is sorted alphabetically
+5. The sorted array is compared to the inputed word
+6. Matching words are pushed to a new array
+7. The matching array is displayed
