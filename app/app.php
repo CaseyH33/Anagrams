@@ -14,7 +14,8 @@
     $app->get("/view_matches", function() use ($app) {
         $my_AnagramGenerator = new AnagramGenerator;
         $matches = $my_AnagramGenerator->anagramCheck($_GET['keyword'], $_GET['wordlist']);
-        return$app['twig']->render('view_matches.html.twig', array('result' => $matches));
+        $keyword = $_GET['keyword'];
+        return$app['twig']->render('view_matches.html.twig', array('result' => $matches, 'keyword' => $keyword));
     });
 
     return $app;

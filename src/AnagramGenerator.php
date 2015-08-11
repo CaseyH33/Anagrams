@@ -20,7 +20,7 @@
             if(empty($matched_words)) {
                 return "No matches found.";
             } else {
-                return implode(" ", $matched_words);
+                return "Your anagram matches are: " . implode(" ", $matched_words);
             }
         }
     }
