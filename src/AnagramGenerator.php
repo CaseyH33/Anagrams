@@ -25,7 +25,9 @@
             }
         }
 
-        /*    $array_of_words = explode(" ", $input_wordsToCheck);
+        /*
+        Code to work without returning partials:
+            $array_of_words = explode(" ", $input_wordsToCheck);
             $letter_array = str_split(strtolower($input_word));
             sort($letter_array);
             $matched_words = array();
