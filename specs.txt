@@ -41,3 +41,9 @@ Anagrams with BDD:
     Behavior: Will return all anagrams, regardless of upper case letters.
     Input: "Cat", "ACT", "Bread", "TAc"
     Output: "ACT", "TAc"
+
+8. anagram_true_partial
+
+    Behavior: Will return all anagrams, including partial matches.
+    Input: "Cat" | "Tact", "enact", "bread", "act"
+    Output: "Tact", "enact", "act"
