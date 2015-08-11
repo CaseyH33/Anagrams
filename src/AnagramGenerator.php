@@ -4,12 +4,12 @@
         function anagramCheck($input_word, $input_wordsToCheck)
         {
             $array_of_words = explode(" ", $input_wordsToCheck);
-            $letter_array = str_split($input_word);
+            $letter_array = str_split(strtolower($input_word));
             sort($letter_array);
             $matched_words = array();
 
             foreach($array_of_words as $word) {
-                $sorted_word = str_split($word);
+                $sorted_word = str_split(strtolower($word));
                 sort($sorted_word);
                 if($sorted_word == $letter_array)
                 {
