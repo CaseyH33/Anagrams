@@ -1,9 +1,37 @@
 Anagrams with BDD:
 
-1. Prints a user inputed word
-2. Converts string of user inputed words into an array
-3. Each word in the array is broken into an array of letters
-4. Each letter array is sorted alphabetically
-5. The sorted array is compared to the inputed word
-6. Matching words are pushed to a new array
-7. The matching array is displayed
+1.  letter_check_true
+
+    Behavior: Will return a letter because it matches the other letter.
+    Input: "a", "a"
+    Output: "a"
+
+2.  letter_check_false
+
+    Behavior: Will return no letter, because it does not match the other letter.
+    Input: "a", "b"
+    Output: ""
+
+3.  anagram_true
+
+    Behavior: Will return second word, because it is an anagram.
+    Input: "Bread", "Beard"
+    Output: "Beard"
+
+4.  anagram_false
+
+    Behavior: Will return no word, because it is not an anagram.
+    Input: "Bread", "Cat"
+    Output: ""
+
+5.  anagram_true_twoWords
+
+    Behavior: Will return only one of two words, because only one is        an anagram.
+    Input: "Bread", "Cat", "Beard"
+    Output: "Beard"
+
+6.  anagram_true_multipleResults
+
+    Behavior: Will return multiple words that are all anagrams.
+    Input: "Act", "Cat", "Beard", "Tac"
+    Output: "Cat", "Tac"
