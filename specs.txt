@@ -35,3 +35,9 @@ Anagrams with BDD:
     Behavior: Will return multiple words that are all anagrams.
     Input: "Act", "Cat", "Beard", "Tac"
     Output: "Cat", "Tac"
+
+7.  anagram_true_caps
+
+    Behavior: Will return all anagrams, regardless of upper case letters.
+    Input: "Cat", "ACT", "Bread", "TAc"
+    Output: "ACT", "TAc"
