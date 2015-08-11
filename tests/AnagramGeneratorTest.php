@@ -87,5 +87,19 @@
             //Assert
             $this->assertEquals("cat tac", $result);
         }
+
+        function test_anagram_true_caps()
+        {
+            //Arrange
+            $test_anagram = new AnagramGenerator;
+            $input_word = "act";
+            $input_wordsToCheck = "CAT beard tAc";
+
+            //Act
+            $result = $test_anagram->anagramCheck($input_word, $input_wordsToCheck);
+
+            //Assert
+            $this->assertEquals("CAT tAc", $result);
+        }
     }
 ?>
