@@ -59,5 +59,19 @@
             //Assert
             $this->assertEquals("No matches found.", $result);
         }
+
+        function test_anagram_true_twoResults()
+        {
+            //Arrange
+            $test_anagram = new AnagramGenerator;
+            $input_word = "bread";
+            $input_wordsToCheck = "cat beard";
+
+            //Act
+            $result = $test_anagram->anagramCheck($input_word, $input_wordsToCheck);
+
+            //Assert
+            $this->assertEquals("beard", $result);        
+        }
     }
 ?>

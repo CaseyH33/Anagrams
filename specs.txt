@@ -26,7 +26,7 @@ Anagrams with BDD:
 
 5.  anagram_true_twoWords
 
-    Behavior: Will return only one of two words, because only one is        an anagram.
+    Behavior: Will return only one of two words, because only one is an anagram.
     Input: "Bread", "Cat", "Beard"
     Output: "Beard"
 
